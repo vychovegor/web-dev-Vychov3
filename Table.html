@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Random Cell Heights</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        /* Случайные размеры для высоты ячеек */
+        .random-cell {
+            height: calc(50px + (Math.random() * 200px));
+        }
+    </style>
+</head>
+<body>
+    <h2>Table with Random Cell Heights</h2>
+    <table>
+        <thead>
+            <tr>
+                <!-- Заголовки столбцов -->
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+                <th>Column 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- Ячейки с случайными размерами высоты -->
+                <td class="random-cell">Data 1</td>
+                <td class="random-cell">Data 2</td>
+                <td class="random-cell">Data 3</td>
+                <td class="random-cell">Data 4</td>
+                <td class="random-cell">Data 5</td>
+            </tr>
+            <tr>
+                <td class="random-cell">Data 6</td>
+                <td class="random-cell">Data 7</td>
+                <td class="random-cell">Data 8</td>
+                <td class="random-cell">Data 9</td>
+                <td class="random-cell">Data 10</td>
+            </tr>
+            <!-- Добавьте дополнительные строки и ячейки при необходимости -->
+        </tbody>
+    </table>
+</body>
+</html>
+
+
